@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Task from './components/Task';
+import TaskDetails from './components/TaskDetails';
 
 const App = () => {
 
@@ -95,6 +96,7 @@ return (
         } 
         />
         <Route path="/about" element={<About />} />
+        <Route path="/task/:id" element={<TaskDetails />} />
       </Routes>
       <Footer />
     </div>
